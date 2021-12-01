@@ -37,7 +37,7 @@ let messages = [
 
 // define songs
 let songs = [
-    ['controlla.mp3', 'idealism - controlla']
+    ['Cadillac.mp3', 'Morgenshtern - Cadillac']
 ]
 
 // loaded audio callback
