@@ -30,10 +30,9 @@ let messages = [
     'я активно продвигаюсь в сфере даунизма',
     'Мои каналы:',
     '<a target="_blank" href="https://youtube.com/c/andinkov">1</a> - канал по майнкрафту. ',
-    '<a target="_blank" href="https://www.youtube.com/channel/UCOLoGn0IKwmfLJxEkqjcBow">2</a> - канал по разным другим играм',
+    '<a target="_blank" href="https://www.youtube.com/channel/UCOLoGn0IKwmfLJxEkqjcBow">2</a> - канал другим играм',
     'Мои дискорд сервера:',
-    '<a target="_blank" href="https://dsc.gg/andinkov">CHILLZONE</a>',
-    ''
+    '<a target="_blank" href="https://dsc.gg/andinkov">CHILLZONE</a>'
 ];
 
 // define songs
@@ -90,7 +89,7 @@ $(document).ready(function() {
 // load the main page and execute required functions
 function startIt() {
     // set the document title
-    document.title = 'milansky.me | home';
+    document.title = 'andinkov | home';
 
     // get a random song
     let song = songs.random();
@@ -141,7 +140,7 @@ $(document).on('click', function(e) {
 // type new text
 function newText() {
     // insert a new element into the dom
-    $('#contentinner').append(`<div class="instruction"> <span class="user">milansky@127.0.0.1</span>: <span class="path">~</span>$ <span id="command${currentlyOn}" class="command"></span> <span class="blinking-cursor" id="blinkingcursor">_</span> </div>`);
+    $('#contentinner').append(`<div class="instruction"> <span class="user">andinkov@0.0.0.0</span>: <span class="path">~</span>$ <span id="command${currentlyOn}" class="command"></span> <span class="blinking-cursor" id="blinkingcursor">_</span> </div>`);
     // initialize a new instance of typeit
     new TypeIt(`#command${currentlyOn}`, {
         strings: messages[currentlyOn],
